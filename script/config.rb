@@ -1,5 +1,7 @@
-repo_path = File.expand_path(File.join(File.dirname(__FILE__), '..', '..'))
+def get_dir(li_dir)
+  root_path = File.join(File.dirname(__FILE__), '..')
+  return File.expand_path(File.join([root_path] + li_dir))
+end
 
-cookbook_path [File.join(repo_path, 'site-cookbooks'), File.join(repo_path), 'cookbooks']
-role_path File.expand_path(File.join(File.dirname(__FILE__), 'roles'))
-file_cache_path File.expand_path(File.join(File.dirname(__FILE__), 'logs'))
+cookbook_path [get_dir(%w(site-cookbooks)), get_dir(%w(cookbooks))]
+file_cache_path get_dir(%w(logs))

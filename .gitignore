@@ -3,4 +3,5 @@ Vagrantfile
 
 .DS_Store
 logs/
+cookbooks
 Berksfile.lock

@@ -2,9 +2,9 @@ def get_path(li_path)
   return li_path.join('\\')
 end
 
-sd = ENV[:SYSTEMDRIVE]
-pf = ENV[:ProgramFiles]
-pd = ENV[:ProgramData]
+sd = ENV['SYSTEMDRIVE']
+pf = ENV['ProgramFiles']
+pd = ENV['ProgramData']
 
 default[:winrc][:paths][:machine] = [
   #get_path(%W(#{pf} ConEmu)),
