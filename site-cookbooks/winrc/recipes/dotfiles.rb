@@ -1,4 +1,4 @@
-dotfiles = ENV['HOMEDRIVE'] + ENV['HOMEPATH'] + '\\dotfiles'
+dotfiles = [node[:dir][:home], 'dotfiles'].join('\\')
 
 git dotfiles do
   repository 'https://github.com/yakisuzu/dotfiles.git'
@@ -8,8 +8,6 @@ git dotfiles do
 end
 
 batch 'install_dotfiles' do
-  code <<-EOH
-    #{dotfiles}\\install.bat
-    EOH
+  code "#{dotfiles}\\install.bat"
   action :nothing
 end

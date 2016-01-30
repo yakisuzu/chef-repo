@@ -1,18 +1,18 @@
 include_recipe 'chocolatey'
 
 # chef
-chocolatey 'chefdk'
+#chocolatey 'chefdk'
 
 # tool
-chocolatey '7zip'
-chocolatey 'ConEmu'
+#chocolatey '7zip'
+chocolatey 'Cmder'
 
 # lang
-chocolatey 'nodejs'
-chocolatey 'python2'
-chocolatey 'python3'
+#chocolatey 'nodejs'
+#chocolatey 'python2'
+#chocolatey 'python3'
 
 # version control
-chocolatey 'git'
+#chocolatey 'git'
 #chocolatey 'svn'
 #chocolatey 'tortoisesvn'
