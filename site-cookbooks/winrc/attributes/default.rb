@@ -8,7 +8,7 @@ default[:kernel][:is64] = kernel['machine'] =~ /x86_64/
 default[:dir][:sd] = ENV['SYSTEMDRIVE']
 default[:dir][:pf] = ENV['ProgramFiles']
 default[:dir][:pd] = ENV['ProgramData']
-default[:dir][:home] = ENV['HOMEDRIVE'] + ENV['HOMEPATH']
+default[:dir][:home] = ENV['USERPROFILE']
 
 default[:dir][:logs] = Chef::Config[:file_cache_path]
 default[:dir][:root] = File.expand_path('..', node[:dir][:logs]) 

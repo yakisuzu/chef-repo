@@ -1,5 +1,5 @@
 batch 'set home' do
-  code "setx HOME %HOMEPATH%"
+  code "setx HOME %USERPROFILE%"
   action :run
 end
 
