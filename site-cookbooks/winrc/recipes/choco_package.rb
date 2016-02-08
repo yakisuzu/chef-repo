@@ -3,6 +3,8 @@ include_recipe 'chocolatey'
 # tool
 #chocolatey '7zip'
 chocolatey 'Cmder'
+chocolatey 'GoogleChrome'
+
 
 # lang
 chocolatey 'python3'
