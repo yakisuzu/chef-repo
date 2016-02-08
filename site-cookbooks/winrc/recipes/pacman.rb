@@ -17,6 +17,6 @@ batch 'update' do
   action :run
 end
 
-install_pacman('install python3', 'python')
-install_pacman('install python2', 'python2')
+#install_pacman('install python3', 'python')
+#install_pacman('install python2', 'python2')
 install_pacman('install tig', 'tig')
