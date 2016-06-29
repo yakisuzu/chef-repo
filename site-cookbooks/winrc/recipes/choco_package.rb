@@ -3,8 +3,8 @@
 # tool
 chocolatey '7zip'
 chocolatey 'Cmder'
-chocolatey 'GoogleChrome'
-chocolatey 'adobereader'
+#chocolatey 'GoogleChrome'
+#chocolatey 'adobereader'
 
 
 # lang
