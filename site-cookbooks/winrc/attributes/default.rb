@@ -14,6 +14,7 @@ default[:dir][:logs] = Chef::Config[:file_cache_path]
 default[:dir][:root] = File.expand_path('..', node[:dir][:logs]) 
 
 default[:path] = {
+  :homebin => get_path(%W(#{node[:dir][:home]} dotfiles bin)),
   :msysgit => get_path(%W(#{node[:dir][:sd]} tools cmder vendor msysgit bin)),
   :ruby => get_path(%W(#{node[:dir][:sd]} opscode chefdk embedded bin)),
   :chefdk => get_path(%W(#{node[:dir][:sd]} opscode chefdk bin)),
