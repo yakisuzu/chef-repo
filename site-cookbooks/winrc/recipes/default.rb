@@ -8,6 +8,9 @@ include_recipe 'winrc::choco_package'
 include_recipe 'winrc::dotfiles'
 include_recipe 'winrc::stickies'
 
+# npm
+include_recipe 'winrc::nodejs'
+
 # pacman
 include_recipe 'winrc::pacman'
 
