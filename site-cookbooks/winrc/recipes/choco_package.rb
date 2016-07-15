@@ -2,7 +2,8 @@
 
 # tool
 chocolatey '7zip'
-chocolatey 'Cmder'
+chocolatey 'ConEmu'
+#chocolatey 'Cmder'
 #chocolatey 'GoogleChrome'
 #chocolatey 'adobereader'
 
@@ -11,6 +12,7 @@ chocolatey 'Cmder'
 chocolatey 'python3'
 chocolatey 'python2'
 chocolatey 'nodejs'
+chocolatey 'golang'
 chocolatey 'jdk8'
 
 # version control
