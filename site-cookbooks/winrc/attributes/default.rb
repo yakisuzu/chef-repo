@@ -26,7 +26,7 @@ default[:path] = {
   git_pacman: get_path(%W(#{node[:dir][:sd]} #{node[:dir][:msys]} usr bin)),
   msys2: get_path(%W(#{node[:dir][:sd]} #{node[:dir][:msys]})),
   chocolatey: get_path(%W(#{node[:dir][:pd]} chocolatey bin)),
-  cmder: get_path(%W(#{node[:dir][:pf32]} ConEmu)),
+  conemu: get_path(%W(#{node[:dir][:pf32]} ConEmu)),
   vim: get_path(%W(#{node[:dir][:pf]})),
 }
 
