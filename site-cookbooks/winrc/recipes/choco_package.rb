@@ -13,6 +13,7 @@ chocolatey 'python2'
 chocolatey 'nodejs'
 chocolatey 'golang'
 chocolatey 'jdk8'
+chocolatey 'maven'
 
 # DB
 #chocolatey 'mysql'
