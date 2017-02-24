@@ -20,14 +20,15 @@ default[:dir][:vim] = node[:kernel][:is64] ? 'vim74-kaoriya-win64' : 'vim74-kaor
 default[:dir][:root] = File.expand_path('..', node[:dir][:logs])
 
 default[:path] = {
-  homebin: get_path(%W(#{node[:dir][:home]} dotfiles bin)),
-  ruby: get_path(%W(#{node[:dir][:sd]} opscode chefdk embedded bin)),
-  chefdk: get_path(%W(#{node[:dir][:sd]} opscode chefdk bin)),
-  git_pacman: get_path(%W(#{node[:dir][:sd]} #{node[:dir][:msys]} usr bin)),
-  msys2: get_path(%W(#{node[:dir][:sd]} #{node[:dir][:msys]})),
-  chocolatey: get_path(%W(#{node[:dir][:pd]} chocolatey bin)),
-  conemu: get_path(%W(#{node[:dir][:pf32]} ConEmu)),
-  vim: get_path(%W(#{node[:dir][:pf]})),
+  homebin: (get_path %W(#{node[:dir][:home]} dotfiles bin)),
+  docker: (get_path [node[:dir][:pf], 'Docker Toolbox']),
+  ruby: (get_path %W(#{node[:dir][:sd]} opscode chefdk embedded bin)),
+  chefdk: (get_path %W(#{node[:dir][:sd]} opscode chefdk bin)),
+  git_pacman: (get_path %W(#{node[:dir][:sd]} #{node[:dir][:msys]} usr bin)),
+  msys2: (get_path [node[:dir][:sd], node[:dir][:msys]]),
+  chocolatey: (get_path %W(#{node[:dir][:pd]} chocolatey bin)),
+  conemu: (get_path [node[:dir][:pf32], 'ConEmu']),
+  vim: (get_path [node[:dir][:pf], node[:dir][:vim]]),
 }
 
 #get_path(%W(#{node[:dir][:pf]} Git cmd)),
